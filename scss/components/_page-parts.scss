@@ -1,0 +1,175 @@
+// Header
+
+header {
+    background-color: $main;
+    @include flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    h1 {
+        margin-right: auto;
+    };
+    @media (min-width: $break-m){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+// Dropdown content
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $white;
+    min-width: 150px;
+    z-index: 1;
+    a {
+        color: $grey;
+        border: $border;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  }
+
+.bell-icon-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bell-icon-dropdown:hover .alert-marker {
+    display: none;
+}
+
+// NAV
+
+nav {
+    background-color: $dark-main;
+    @include flex;
+    justify-content: center;
+    @media (min-width: $break-m){
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.section-header {
+    @include flex;
+    justify-content: space-between;
+}
+
+.traffic-nav-link {
+    list-style: none;
+    display: inline;
+    padding: 0 5px;
+    @media (min-width: $break-m){
+        padding: 0 10px;
+        margin: 0 10px;
+    }
+}
+
+.active-traffic-nav-linc {
+    color: $white;
+    border-radius: 40px;
+    background-color: $accent;
+    padding: 10px;
+};
+
+
+// Top Bar
+
+.topBar {
+    @include flex;
+    justify-content: space-between;
+}
+
+.topBarSearch {
+    padding-right: 10px;
+}
+
+.search {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+// Alert
+
+.alert {
+    padding: 10px;
+}
+
+.alert-banner {
+    @include flex;
+    justify-content: space-between;
+    background-color: $main;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+// charts
+.daily, .mobile {
+    @media (min-width: $break-m){
+        border: $border;
+    }
+}
+
+// member container
+
+.member-container {
+    margin: 10px;
+    @include flex;
+    justify-content: space-between;
+    border-bottom: $border;
+    p {
+        margin: 0;
+    };
+    .date, .arrow {
+        margin-left: auto;
+    };
+    .arrow {
+        color: $main;
+    };
+    .members-text {
+        a {
+            color: $main;
+        }
+    }
+}
+
+// Message
+
+.widget-container {
+    @include flex;
+    flex-direction: column;
+    .form-field, .form-area {
+        width: 70%;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px;
+    };
+    .button-primary {
+        width: 70%;
+    }
+}
+
+
+// Settings 
+
+.settings-container{
+    @include flex;
+    justify-content: space-between;
+    padding: 10px 30% 10px 20px;
+}
+
+select {
+    padding: 15px;
+    width: 70%;
+    height: 40px;
+    color: $grey;
+    margin: 20px 0 10px 15%;
+}
+
+// Autocomplete
+
+.autocomplete > div.selected {
+    background: $accent;
+}

@@ -1,0 +1,67 @@
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+    margin: 0  auto;
+}
+
+@media (min-width: $break-m) {
+    .widget-container-full {
+        width: 90vw;
+    }
+    .widget-container-half {
+        width: 45vw;
+    }
+}
+
+// Social widgets
+
+.social-container{
+    @include flex;
+    width: 30%;
+    border: $border;
+    border-radius: 5px;
+    padding: 5px;
+    @media (min-width: $break-m){
+        padding: 10px;
+        width: 200px;
+    }
+}
+
+.social-widgets div {
+    @include flex;
+    justify-content: space-around;
+
+}
+
+.social-text {
+    display: flex;
+    flex-direction: column;
+    p:first-child {
+        color: $main;
+        font-weight: bold;
+        font-size: $small-font-size;
+    };
+    p {
+        font-size: 15px;
+        margin: 0;
+        @media (min-width: $break-m) {
+            font-size: 30px;
+        }
+    }
+}
+
+//-----------------------------
+.new-members, 
+.recent-activity, 
+.message-widget, 
+.settings {
+    @media (min-width: $break-m){
+        border: $border;
+    }
+}
+
+.new-members, 
+.recent-activity {
+    @media (min-width: $break-m) {
+        margin: 2em 0 0 0;
+    }
+}

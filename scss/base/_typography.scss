@@ -1,0 +1,32 @@
+$base-font-family: 'Source Sans Pro', sans-serif;
+
+$small-font-size : x-small;
+$base-font-size : small;
+$norm-font-size : medium;
+
+// -----------------------------------
+
+* {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    @media (min-width: $break-m) {
+        font-size: $norm-font-size;
+    }
+}
+
+main {
+    color: $grey;
+}
+
+header {
+    color: $white;
+    font-size: $small-font-size;
+    @media (min-width: $break-m) {
+        font-size: $norm-font-size;
+    }
+    
+}
+
+.alert-banner {
+    color: $white;
+}

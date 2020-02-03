@@ -1,0 +1,18 @@
+// Names Of Base Colors
+$grey               : #777;
+$light_grey         : lighten($grey, 25%);
+$white              : #fff;
+$main               : #7377bf;
+$dark_main          : darken($main, 35%);
+$light_main         : lighten($main, 25%);
+$accent             : #53f373;
+
+$granny_smith_apple : #88d9a0;
+$boston_blue        : #4da2bb;
+
+// Media query breakpoint
+$break-m: 768px;
+$break-l: 1024px;
+
+// Border
+$border: 1px solid $light_grey;

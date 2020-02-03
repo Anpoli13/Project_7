@@ -1,0 +1,8 @@
+.avatar,
+.profile-image {
+    @include avatar-img;
+}
+
+.avatar {
+    margin-left: 20px;
+}

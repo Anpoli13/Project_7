@@ -1,0 +1,20 @@
+.button-primary, .button-disabled  {
+    color: $white;
+    background-color: $main;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.button-disabled{
+    background-color: $light-grey;
+}
+
+.settings-button{
+    @include flex;
+    justify-content: center;
+    .button-primary, .button-disabled {
+        width: 35%;
+    }
+}
